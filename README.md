@@ -1,13 +1,10 @@
 ## Typescript
 
 - npx create-react-app my-app --template typescript
-
 - js의 superset : 다른 언어 위에서 동작하는 언어
-
 - js + 멋진 것들
-
 - 개발자들이 하는 실수를 줄여줌
-
+- yarn add @types/styled-components
 
 
 ## Typescript는 interface
