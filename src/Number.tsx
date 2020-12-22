@@ -1,13 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-interface IContainer {
-    isBlue : boolean,
-}
+// interface IContainer {
+//     isBlue : boolean,
+// }
 
-const Container = styled.span<IContainer>`
-    color:${props => props.isBlue ? "blue" : "red"}
+const Container = styled.span< {isBlue: boolean} >`
+    color: ${props => (props.isBlue ? props.theme.blueColor : props.theme.redColor)};
 `;
+
+// const Container = styled.span<IContainer>`
+//     color:${props => props.isBlue ? "blue" : "red"}
+// `;
 
 // const Container = styled.span<{isBlue:boolean}>`
 //     color:${props => props.isBlue ? "blue" : "red"}
